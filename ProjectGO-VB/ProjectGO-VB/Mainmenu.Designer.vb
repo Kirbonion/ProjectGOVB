@@ -29,7 +29,9 @@ Partial Class Mainmenu
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
+        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -43,7 +45,7 @@ Partial Class Mainmenu
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(184, 393)
+        Me.Panel1.Size = New System.Drawing.Size(178, 393)
         Me.Panel1.TabIndex = 0
         '
         'Button5
@@ -55,7 +57,7 @@ Partial Class Mainmenu
         Me.Button5.Location = New System.Drawing.Point(0, 337)
         Me.Button5.Margin = New System.Windows.Forms.Padding(0)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(184, 56)
+        Me.Button5.Size = New System.Drawing.Size(178, 56)
         Me.Button5.TabIndex = 4
         Me.Button5.Text = "Exit"
         Me.Button5.UseVisualStyleBackColor = True
@@ -115,11 +117,24 @@ Partial Class Mainmenu
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(210, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(210, Byte), Integer))
+        Me.Panel2.Controls.Add(Me.Label1)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel2.Location = New System.Drawing.Point(184, 0)
+        Me.Panel2.Location = New System.Drawing.Point(178, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(622, 65)
+        Me.Panel2.Size = New System.Drawing.Size(628, 74)
         Me.Panel2.TabIndex = 1
+        '
+        'Label1
+        '
+        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Modern No. 20", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(312, 18)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(183, 38)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "ProjectGO"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Mainmenu
         '
@@ -134,6 +149,8 @@ Partial Class Mainmenu
         Me.Text = "ProjectGO"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel1.ResumeLayout(False)
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -145,4 +162,5 @@ Partial Class Mainmenu
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Panel2 As Panel
+    Friend WithEvents Label1 As Label
 End Class
