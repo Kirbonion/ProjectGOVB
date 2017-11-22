@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Mainmenu
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,33 +20,64 @@ Partial Class Mainmenu
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.PanelLeft = New System.Windows.Forms.Panel()
+        Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Panel1.SuspendLayout()
-        Me.Panel2.SuspendLayout()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.ButtonStatistics = New System.Windows.Forms.Button()
+        Me.ButtonSettings = New System.Windows.Forms.Button()
+        Me.ButtonLoadGame = New System.Windows.Forms.Button()
+        Me.ButtonJoinGame = New System.Windows.Forms.Button()
+        Me.PanelLeft.SuspendLayout()
+        Me.Panel4.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Panel1
+        'PanelLeft
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(229, Byte), Integer))
-        Me.Panel1.Controls.Add(Me.Button5)
-        Me.Panel1.Controls.Add(Me.Button4)
-        Me.Panel1.Controls.Add(Me.Button3)
-        Me.Panel1.Controls.Add(Me.Button2)
-        Me.Panel1.Controls.Add(Me.Button1)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(178, 393)
-        Me.Panel1.TabIndex = 0
+        Me.PanelLeft.BackColor = System.Drawing.Color.FromArgb(CType(CType(139, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(74, Byte), Integer))
+        Me.PanelLeft.Controls.Add(Me.Panel4)
+        Me.PanelLeft.Controls.Add(Me.Panel3)
+        Me.PanelLeft.Controls.Add(Me.Button5)
+        Me.PanelLeft.Controls.Add(Me.ButtonStatistics)
+        Me.PanelLeft.Controls.Add(Me.ButtonSettings)
+        Me.PanelLeft.Controls.Add(Me.ButtonLoadGame)
+        Me.PanelLeft.Controls.Add(Me.ButtonJoinGame)
+        Me.PanelLeft.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelLeft.Location = New System.Drawing.Point(0, 0)
+        Me.PanelLeft.Name = "PanelLeft"
+        Me.PanelLeft.Size = New System.Drawing.Size(178, 768)
+        Me.PanelLeft.TabIndex = 0
+        '
+        'Panel4
+        '
+        Me.Panel4.Controls.Add(Me.Label1)
+        Me.Panel4.Location = New System.Drawing.Point(0, 0)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(178, 74)
+        Me.Panel4.TabIndex = 5
+        '
+        'Label1
+        '
+        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label1.Font = New System.Drawing.Font("Modern No. 20", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(43, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(0, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(178, 74)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "ProjectGO"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(43, Byte), Integer))
+        Me.Panel3.Location = New System.Drawing.Point(168, 74)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(10, 56)
+        Me.Panel3.TabIndex = 2
         '
         'Button5
         '
@@ -54,7 +85,7 @@ Partial Class Mainmenu
         Me.Button5.FlatAppearance.BorderSize = 0
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button5.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.Location = New System.Drawing.Point(0, 337)
+        Me.Button5.Location = New System.Drawing.Point(0, 712)
         Me.Button5.Margin = New System.Windows.Forms.Padding(0)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(178, 56)
@@ -62,105 +93,82 @@ Partial Class Mainmenu
         Me.Button5.Text = "Exit"
         Me.Button5.UseVisualStyleBackColor = True
         '
-        'Button4
+        'ButtonStatistics
         '
-        Me.Button4.FlatAppearance.BorderSize = 0
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(0, 236)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(184, 56)
-        Me.Button4.TabIndex = 3
-        Me.Button4.Text = "Statistics"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.ButtonStatistics.FlatAppearance.BorderSize = 0
+        Me.ButtonStatistics.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonStatistics.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonStatistics.Location = New System.Drawing.Point(0, 242)
+        Me.ButtonStatistics.Margin = New System.Windows.Forms.Padding(0)
+        Me.ButtonStatistics.Name = "ButtonStatistics"
+        Me.ButtonStatistics.Size = New System.Drawing.Size(178, 56)
+        Me.ButtonStatistics.TabIndex = 3
+        Me.ButtonStatistics.Text = "Statistics"
+        Me.ButtonStatistics.UseVisualStyleBackColor = True
         '
-        'Button3
+        'ButtonSettings
         '
-        Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(0, 180)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(184, 56)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = "Settings"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.ButtonSettings.FlatAppearance.BorderSize = 0
+        Me.ButtonSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonSettings.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonSettings.Location = New System.Drawing.Point(0, 186)
+        Me.ButtonSettings.Margin = New System.Windows.Forms.Padding(0)
+        Me.ButtonSettings.Name = "ButtonSettings"
+        Me.ButtonSettings.Size = New System.Drawing.Size(178, 56)
+        Me.ButtonSettings.TabIndex = 2
+        Me.ButtonSettings.Text = "Settings"
+        Me.ButtonSettings.UseVisualStyleBackColor = True
         '
-        'Button2
+        'ButtonLoadGame
         '
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(0, 124)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(184, 56)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Load Game"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.ButtonLoadGame.FlatAppearance.BorderSize = 0
+        Me.ButtonLoadGame.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonLoadGame.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonLoadGame.Location = New System.Drawing.Point(0, 130)
+        Me.ButtonLoadGame.Margin = New System.Windows.Forms.Padding(0)
+        Me.ButtonLoadGame.Name = "ButtonLoadGame"
+        Me.ButtonLoadGame.Size = New System.Drawing.Size(178, 56)
+        Me.ButtonLoadGame.TabIndex = 1
+        Me.ButtonLoadGame.Text = "Load Game"
+        Me.ButtonLoadGame.UseVisualStyleBackColor = True
         '
-        'Button1
+        'ButtonJoinGame
         '
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(0, 68)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(184, 56)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Join Game"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Panel2
-        '
-        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(210, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(210, Byte), Integer))
-        Me.Panel2.Controls.Add(Me.Label1)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel2.Location = New System.Drawing.Point(178, 0)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(628, 74)
-        Me.Panel2.TabIndex = 1
-        '
-        'Label1
-        '
-        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Modern No. 20", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(312, 18)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(183, 38)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "ProjectGO"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.ButtonJoinGame.FlatAppearance.BorderSize = 0
+        Me.ButtonJoinGame.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonJoinGame.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonJoinGame.Location = New System.Drawing.Point(0, 74)
+        Me.ButtonJoinGame.Margin = New System.Windows.Forms.Padding(0)
+        Me.ButtonJoinGame.Name = "ButtonJoinGame"
+        Me.ButtonJoinGame.Size = New System.Drawing.Size(178, 56)
+        Me.ButtonJoinGame.TabIndex = 0
+        Me.ButtonJoinGame.Text = "Join Game"
+        Me.ButtonJoinGame.UseVisualStyleBackColor = True
         '
         'Mainmenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(806, 393)
-        Me.Controls.Add(Me.Panel2)
-        Me.Controls.Add(Me.Panel1)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(43, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(1366, 768)
+        Me.Controls.Add(Me.PanelLeft)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Mainmenu"
         Me.Text = "ProjectGO"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
+        Me.PanelLeft.ResumeLayout(False)
+        Me.Panel4.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents Button1 As Button
+    Friend WithEvents PanelLeft As Panel
+    Friend WithEvents ButtonJoinGame As Button
     Friend WithEvents Button5 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Panel2 As Panel
+    Friend WithEvents ButtonStatistics As Button
+    Friend WithEvents ButtonSettings As Button
+    Friend WithEvents ButtonLoadGame As Button
     Friend WithEvents Label1 As Label
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents Panel4 As Panel
 End Class
